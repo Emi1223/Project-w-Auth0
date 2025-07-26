@@ -1,10 +1,11 @@
 # 🛡️ LoginSeguro - Auth0 Authentication Demo
 
-¡Hola! Mi nombre es **Emiliano** y este es mi primer proyecto en hackathons. 
+¡Hola! Mi nombre es **Emiliano** y este es mi primer proyecto en hackathons.
+Este proyecto fue desarrollado para el hackathon Data HackFest 2025 de MLH, como parte de mi aprendizaje utilice GitHub Copilot para desarrollar el codigo de manera eficiente, limpia, rapida e incluso implementando funciones que en un pasado no conocia.
 
 ## 🚀 Descripción del Proyecto
 
-**LoginSeguro** es una aplicación web moderna que implementa autenticación segura usando **Auth0**. Este proyecto demuestra cómo integrar Auth0 en una aplicación web para proporcionar un sistema de autenticación robusto y confiable.
+**LoginSeguro** es una aplicación web moderna que implementa autenticación segura usando **Auth0**. Este proyecto me sirvio para aprender el cómo integrar Auth0 en una aplicación web para proporcionar un sistema de autenticación robusto y confiable.
 
 Auth0 ha sido parte de muchas páginas de autenticación durante mucho tiempo, así que quería aprender sobre esta tecnología e implementarla en un pequeño proyecto.
 
@@ -44,7 +45,7 @@ Auth0/
    - Configurar una nueva aplicación SPA
    - Actualizar `domain` y `client_id` en `script.js`
 3. **Ejecutar**:
-   - Abrir `index.html` en un servidor local (recomendado)
+   - Abrir `index.html` en un servidor local
    - O usar Live Server extension en VS Code
 
 ## ⚙️ Configuración de Auth0
@@ -105,9 +106,8 @@ El proyecto utiliza un esquema de colores moderno con:
 - Tipografía Inter para profesionalismo
 - Iconos Font Awesome para claridad visual
 
-## 🔮 Mejoras Futuras
+## 🔮 Posibles Mejoras Futuras
 
-- [ ] Implementar autenticación social (Google, Facebook, etc.)
 - [ ] Agregar perfil de usuario expandido
 - [ ] Implementar roles y permisos
 - [ ] Agregar dashboard de usuario
@@ -124,7 +124,7 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
 ## 👨‍💻 Autor
 
-**Emiliano** - Primer proyecto en hackathons
+**Emiliano** - Primer proyecto en hackathons 
 
 ---
 
