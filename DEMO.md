@@ -1,5 +1,4 @@
-[![Demo Video](https://img.youtube.com/vi/dTuCj1Ej3Y4/0.jpg)](https://youtu.be/r2c39OEf0aE)
-
+VIDEO DEMO FOR MLH IS INCLUDED ON README THIS FILE IS ONLY FOR PEOPLE WHO WANTS TO USE THIS CODE
 
 # 🚀 Demo de LoginSeguro
 
