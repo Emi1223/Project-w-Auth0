@@ -71,7 +71,6 @@
 
 Este es mi primer proyecto en hackathons, pero ya tengo ideas para mejorarlo:
 
-- [ ] Implementar autenticación social (Google, Facebook, GitHub)
 - [ ] Agregar dashboard personalizable
 - [ ] Sistema de roles y permisos
 - [ ] API REST para gestión de usuarios
