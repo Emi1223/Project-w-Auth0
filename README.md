@@ -20,7 +20,7 @@ Auth0 ha sido parte de muchas páginas de autenticación durante mucho tiempo, a
 
 ## DEMO VIDEO
 
-[![Demo Video](https://img.youtube.com/vi/dTuCj1Ej3Y4/0.jpg)](https://youtu.be/r2c39OEf0aE)
+[![Demo Video](https://img.youtube.com/vi/r2c39OEf0aE/0.jpg)](https://youtu.be/r2c39OEf0aE)
 
 ## 🛠️ Tecnologías Utilizadas
 
