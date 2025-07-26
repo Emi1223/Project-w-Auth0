@@ -18,6 +18,10 @@ Auth0 ha sido parte de muchas páginas de autenticación durante mucho tiempo, a
 - 🌍 **Universal**: Accesible desde cualquier navegador moderno
 - ✨ **Animaciones Suaves**: Transiciones y efectos visuales atractivos
 
+## DEMO VIDEO
+
+[![Demo Video](https://img.youtube.com/vi/dTuCj1Ej3Y4/0.jpg)](https://youtu.be/r2c39OEf0aE)
+
 ## 🛠️ Tecnologías Utilizadas
 
 - **HTML5**: Estructura semántica moderna
