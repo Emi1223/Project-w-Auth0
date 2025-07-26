@@ -1,4 +1,4 @@
-[![Demo Video]((https://youtu.be/r2c39OEf0aE))] (Already deployed website, doesn't includes the deploying of the system)
+[![Demo Video]((https://youtu.be/r2c39OEf0aE)) (Already deployed website, doesn't includes the deploying of the system)
 
 # 🚀 Demo de LoginSeguro
 
