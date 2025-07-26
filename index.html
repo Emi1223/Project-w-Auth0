@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LoginSeguro - Autenticación moderna y segura con Auth0" />
+  <meta name="keywords" content="auth0, autenticación, login, seguridad, hackathon" />
+  <meta name="author" content="Emiliano" />
+  <title>LoginSeguro - Autenticación Segura con Auth0</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <i class="fas fa-shield-alt"></i>
+        <span>LoginSeguro</span>
+      </div>
+      
+      <!-- Navigation for authenticated users -->
+      <nav class="nav-menu" id="nav-menu" style="display: none;">
+        <a href="#dashboard" class="nav-link">
+          <i class="fas fa-tachometer-alt"></i>
+          Dashboard
+        </a>
+        <a href="#profile" class="nav-link">
+          <i class="fas fa-user"></i>
+          Perfil
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Welcome Section -->
+      <section class="welcome-section">
+        <div class="auth-card">
+          <div class="card-header">
+            <h1 class="welcome-title">¡Bienvenido a LoginSeguro!</h1>
+            <p class="welcome-subtitle">Tu plataforma de autenticación moderna y confiable</p>
+          </div>
+
+          <div class="auth-buttons">
+            <button id="btn-login" class="btn btn-primary" title="Iniciar sesión (Alt+L)">
+              <i class="fas fa-sign-in-alt"></i>
+              Iniciar sesión
+            </button>
+            <button id="btn-logout" class="btn btn-secondary" hidden title="Cerrar sesión (Alt+O)">
+              <i class="fas fa-sign-out-alt"></i>
+              Cerrar sesión
+            </button>
+          </div>
+
+          <!-- User Dashboard -->
+          <div id="content" class="user-content" hidden>
+            <div class="user-profile">
+              <div class="avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <p id="welcome-text" class="user-greeting"></p>
+              
+              <!-- User actions -->
+              <div class="user-actions">
+                <button class="btn btn-outline" title="Ver perfil completo">
+                  <i class="fas fa-user-cog"></i>
+                  Mi Perfil
+                </button>
+                <button class="btn btn-outline" title="Configurar cuenta">
+                  <i class="fas fa-cog"></i>
+                  Configuración
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Stats for authenticated users -->
+          <div id="user-stats" class="user-stats" hidden>
+            <div class="stat-item">
+              <i class="fas fa-calendar-check"></i>
+              <div>
+                <span class="stat-number">1</span>
+                <span class="stat-label">Sesiones activas</span>
+              </div>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-shield-check"></i>
+              <div>
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Seguridad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features" aria-label="Características principales">
+        <h2 class="features-title">¿Por qué elegir LoginSeguro?</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3>Seguridad Avanzada</h3>
+            <p>Protección de última generación con Auth0, incluyendo autenticación multifactor y encriptación de extremo a extremo.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-zap"></i>
+            </div>
+            <h3>Acceso Ultrarrápido</h3>
+            <p>Inicio de sesión en menos de 2 segundos con tecnología de vanguardia y optimización de rendimiento.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Acceso Universal</h3>
+            <p>Compatible con todos los dispositivos y navegadores modernos. Accede desde donde quieras, cuando quieras.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Gestión de Usuarios</h3>
+            <p>Sistema completo de gestión de perfiles de usuario con roles, permisos y personalización avanzada.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Analytics Integrado</h3>
+            <p>Monitoreo en tiempo real de la actividad de usuarios y métricas de seguridad para total transparencia.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Diseño Responsive</h3>
+            <p>Interfaz perfectamente adaptada para móviles, tablets y escritorio con experiencia de usuario excepcional.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Stack -->
+      <section class="tech-stack">
+        <h2>Tecnologías Utilizadas</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript ES6+</span>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Auth0</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>LoginSeguro</h4>
+          <p>Mi primer proyecto en hackathons - Emiliano</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces</h4>
+          <a href="#" class="footer-link">Documentación</a>
+          <a href="#" class="footer-link">Soporte</a>
+          <a href="#" class="footer-link">API</a>
+        </div>
+        <div class="footer-section">
+          <h4>Sígueme</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LoginSeguro. Desarrollado por Emiliano | Powered by Auth0</p>
+        <p class="footer-note">🚀 Primer proyecto en hackathons</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
